@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 #
 # Use this script to split advanced services out of Neutron.
 # Derived from oslo graduation script.
