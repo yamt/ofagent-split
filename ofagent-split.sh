@@ -16,17 +16,7 @@
 # Stop if there are any command failures
 set -e
 
-tmpdir=$(mktemp -d -t service-split.XXXX)
-mkdir -p $tmpdir
-logfile=$tmpdir/output.log
-echo "Logging to $logfile"
-
 dst_repo="$1"
-
-count_commits() {
-    echo
-    echo "Have $(git log --oneline | wc -l) commits"
-}
 
 set -x
 
@@ -36,12 +26,6 @@ basedir=`dirname "$0"`
 files_to_keep=$(cat ./ofagent.txt)
 
 cd "$dst_repo"
-
-# Pull in feature branches
-# git pull origin master
-# git checkout feature/lbaasv2
-# git checkout master
-# git merge feature/lbaasv2
 
 
 # Build the grep pattern for ignoring files that we want to keep
