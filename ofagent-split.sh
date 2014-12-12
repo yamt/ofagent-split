@@ -87,6 +87,7 @@ git filter-branch \
     --index-filter "$pruner" \
     --parent-filter "$set_roots" \
     --commit-filter "$skip_empty" \
+    --tag-name-filter cat \
     -- --all
 
 echo "The scratch files and logs from the export are in: $tmpdir"
