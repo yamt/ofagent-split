@@ -1,5 +1,6 @@
 etc/neutron/plugins/ml2/ml2_conf_ofa.ini
 etc/neutron/rootwrap.d/ofagent.filters
+etc/policy.json
 neutron/plugins/ml2/drivers/mech_ofagent.py
 neutron/plugins/ofagent/agent/main.py
 neutron/plugins/ofagent/agent/__init__.py
@@ -15,7 +16,10 @@ neutron/plugins/ofagent/common/__init__.py
 neutron/plugins/ofagent/common/config.py
 neutron/plugins/ofagent/__init__.py
 neutron/plugins/ofagent/README
+neutron/i18n.py
 neutron/tests/unit/ml2/drivers/test_ofagent_mech.py
+neutron/tests/unit/ml2/__init__.py
+neutron/tests/unit/ml2/drivers/__init__.py
 neutron/tests/unit/ofagent/__init__.py
 neutron/tests/unit/ofagent/test_ofa_defaults.py
 neutron/tests/unit/ofagent/fake_oflib.py
